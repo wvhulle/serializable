@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"outDir": "dist",
+		"paths": { "$lib": ["lib"], "$lib/*": ["lib/*"] }
+	},
+	"extends": ["@wvhulle/tsconfig"],
+	"include": ["lib/**/*.d.ts", "lib/**/*.ts", "lib/**/*.spec.ts"],
+	"exclude": ["dist/**/*", "commitlint.config.cjs"]
+}
